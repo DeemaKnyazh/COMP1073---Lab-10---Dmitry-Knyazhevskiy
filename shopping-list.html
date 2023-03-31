@@ -23,14 +23,22 @@
     <div>
       <label for="item">Enter a new item:</label>
       <input type="text" name="item" id="item">
-      <button>Add item</button>
+      <button id="btn">Add item</button>
     </div>
 
-    <ul>
-
+    <ul id="list">
     </ul>
 
     <script>
+        var list = document.getElementById("list");
+        var input = document.getElementById("item");
+        var button = document.getElementById("btn");
+
+        button.onclick = function(){
+            tempItem = input.value;
+            console.log(input.value);
+            input.value = "";
+        };
 
     </script>
   </body>
