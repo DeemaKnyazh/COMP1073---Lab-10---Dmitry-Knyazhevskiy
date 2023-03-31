@@ -51,10 +51,11 @@
             listDelButton.textContent = "Delete";
 
             list.appendChild(listItem);
+
+            listDelButton.onclick = function () {
+                list.removeChild(listItem);
+            };
         };
-
-
-
     </script>
 </body>
 
